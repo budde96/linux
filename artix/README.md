@@ -12,5 +12,5 @@ Download to /root and run as root user. \
 chmod +x artix.sh \
 ./artix.sh
 ### WIP
-1. SSH config \
+1. SSH config
 2. Yay installation
