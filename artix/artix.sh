@@ -38,7 +38,7 @@ usermod -aG video,audio,input,power,storage,optical,lp,scanner,dbus,uucp anon
 echo "Enter password for new user:"
 passwd anon
 # For YaY WIP
-#echo "anon	ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+echo "anon	ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 echo "[lib32]" >> /etc/pacman.conf
 echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
 pacman -Syyu
@@ -53,13 +53,13 @@ echo "Port 22" >> /etc/ssh/sshd_config
 echo "AddressFamily inet" >> /etc/ssh/sshd_config
 echo "PermitRootLogin no" >> /etc/ssh/sshd_config
 # WIP YaY
-#cd /opt
-#git clone https://aur.archlinux.org/yay.git
-#chown -R anon:anon ./yay
-#runuser -l anon -c 'cd /opt/yay && makepkg si'
-#runuser -l anon -c 'yay -Syyu'
-#cd
-#echo "root	ALL=(ALL) ALL" > /etc/sudoers
+cd /opt
+git clone https://aur.archlinux.org/yay.git
+chown -R anon:anon ./yay
+cd
+runuser -l anon -c 'cd /opt/yay && makepkg -si'
+runuser -l anon -c 'yay -Syyu'
+echo "root	ALL=(ALL) ALL" > /etc/sudoers
 echo "anon	ALL=(ALL) ALL" >> /etc/sudoers
 sync
 exit
@@ -69,4 +69,4 @@ cp ~/artix2.sh /mnt/root/
 sync
 artix-chroot /mnt /bin/bash -c "sh ~/artix2.sh"
 umount -R /mnt
-restart
+reboot
