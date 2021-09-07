@@ -37,7 +37,6 @@ useradd -m anon
 usermod -aG video,audio,input,power,storage,optical,lp,scanner,dbus,uucp anon
 echo "Enter password for new user:"
 passwd anon
-# For YaY WIP
 echo "anon	ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 echo "[lib32]" >> /etc/pacman.conf
 echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
@@ -52,7 +51,6 @@ ln -s /etc/runit/sv/sshd /etc/runit/runsvdir/default
 echo "Port 22" >> /etc/ssh/sshd_config
 echo "AddressFamily inet" >> /etc/ssh/sshd_config
 echo "PermitRootLogin no" >> /etc/ssh/sshd_config
-# WIP YaY
 cd /opt
 git clone https://aur.archlinux.org/yay.git
 chown -R anon:anon ./yay
