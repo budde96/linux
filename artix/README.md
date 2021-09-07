@@ -2,7 +2,10 @@
 ## artix.sh
 ### Description
 artix.sh should be used to quickly deploy an Artix Linux install with UEFI in mind. Currently this version is setup for VMs(qemu), for installation on baremetal some changes in the script is needed. \
-No configuration is needed
+No configuration is needed \
+SSH will be configured for only IPv4 and won't allow root login. \
+Yay will be installed and 32-bit libraries are enabled. \
+\
 Partitions are as follows: \
 /dev/vda1 - vfat32 - /boot/efi - EFI partition \
 /dev/vda2 - SWAP - SWAP - SWAP partition \
@@ -11,6 +14,3 @@ Partitions are as follows: \
 Download to /root and run as root user. \
 chmod +x artix.sh \
 ./artix.sh
-### WIP
-1. SSH config
-2. Yay installation
