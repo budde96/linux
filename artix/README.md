@@ -11,6 +11,7 @@ Partitions are as follows: \
 /dev/vda2 - SWAP - SWAP - SWAP partition \
 /dev/vda3 - ext4 - / - ROOT partition
 ### Usage
-Download to /root and run as root user. \
+Download to /root and run as root user: \
+curl -o artix.sh https://raw.githubusercontent.com/BuddeSwe/linux/main/artix/artix.sh \
 chmod +x artix.sh \
 ./artix.sh
