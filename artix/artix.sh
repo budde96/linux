@@ -25,7 +25,7 @@ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=grub
 grub-mkconfig -o /boot/grub/grub.cfg
 echo "Enter new root password:"
 passwd
-echo "test" >> /etc/hostname
+echo "test" > /etc/hostname
 echo "127.0.0.1	localhost" >> /etc/hosts
 echo "::1	localhost" >> /etc/hosts
 echo "10.0.200.20	test.localdomain test" >> /etc/hosts
