@@ -37,9 +37,11 @@ useradd -m anon
 usermod -aG video,audio,input,power,storage,optical,lp,scanner,dbus,uucp anon
 echo "Enter password for new user:"
 passwd anon
-echo "anon	ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+# For YaY WIP
+#echo "anon	ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 echo "[lib32]" >> /etc/pacman.conf
 echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
+pacman -Syyu
 pacman -S vim wget git htop neofetch openssh-runit artix-archlinux-support lib32-artix-archlinux-support go
 rm -rf /etc/runit/runsvdir/default/agetty-tty*
 ln -s /etc/runit/sv/agetty-tty1 /etc/runit/runsvdir/default
@@ -47,18 +49,17 @@ NET_CARD=$(connmanctl services|grep -o "ethernet\w*cable")
 connmanctl config $NET_CARD --ipv4 manual 10.0.200.20 255.255.0.0 10.0.0.1
 connmanctl config $NET_CARD --nameservers 10.0.0.20 10.0.0.21
 ln -s /etc/runit/sv/sshd /etc/runit/runsvdir/default
-pacman -Syyu
 echo "Port 22" >> /etc/ssh/sshd_config
 echo "AddressFamily inet" >> /etc/ssh/sshd_config
 echo "PermitRootLogin no" >> /etc/ssh/sshd_config
 # WIP YaY
-cd /opt
-git clone https://aur.archlinux.org/yay.git
-chown -R anon:anon ./yay
-runuser -l anon -c 'cd /opt/yay && makepkg si'
-runuser -l anon -c 'yay -Syyu'
-cd
-echo "root	ALL=(ALL) ALL" > /etc/sudoers
+#cd /opt
+#git clone https://aur.archlinux.org/yay.git
+#chown -R anon:anon ./yay
+#runuser -l anon -c 'cd /opt/yay && makepkg si'
+#runuser -l anon -c 'yay -Syyu'
+#cd
+#echo "root	ALL=(ALL) ALL" > /etc/sudoers
 echo "anon	ALL=(ALL) ALL" >> /etc/sudoers
 sync
 exit
