@@ -8,9 +8,9 @@ Partitions are as follows: \
 /dev/vda2 - SWAP - SWAP - SWAP partition \
 /dev/vda3 - ext4 - / - ROOT partition
 ### Usage
-Download to /root and run as root user.
-chmod +x artix.sh
+Download to /root and run as root user. \
+chmod +x artix.sh \
 ./artix.sh
 ### WIP
-1. SSH config
+1. SSH config \
 2. Yay installation
