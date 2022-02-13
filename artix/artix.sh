@@ -40,7 +40,7 @@ passwd anon
 echo "[lib32]" >> /etc/pacman.conf
 echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
 pacman -Syyu
-pacman -S vim wget git htop neofetch openssh-runit artix-archlinux-support lib32-artix-archlinux-support go
+pacman -S vim wget curl git btop neofetch openssh-runit artix-archlinux-support lib32-artix-archlinux-support
 rm -rf /etc/runit/runsvdir/default/agetty-tty*
 ln -s /etc/runit/sv/agetty-tty1 /etc/runit/runsvdir/default
 NET_CARD=$(connmanctl services|grep -o "ethernet\w*cable")
