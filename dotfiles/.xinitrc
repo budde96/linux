@@ -2,7 +2,7 @@
 # GTK dark theme
 export GTK_THEME=Adwaita:dark
 # Load .Xmodmap
-#[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
+[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 # Load screen settings
 [[ -f ~/.screenlayout/default.sh ]] && sh ~/.screenlayout/default.sh
 # Wallpaper
