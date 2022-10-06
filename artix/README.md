@@ -12,6 +12,6 @@ Partitions are as follows: \
 /dev/vda3 - ext4 - / - ROOT partition
 ### Usage
 Download to /root and run as root user: \
-curl -o artix.sh https://raw.githubusercontent.com/BuddeSwe/linux/main/artix/artix.sh \
+curl -o artix.sh https://raw.githubusercontent.com/CrimsonCreamMeme/linux/main/artix/artix.sh \
 chmod +x artix.sh \
 ./artix.sh
