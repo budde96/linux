@@ -7,7 +7,7 @@ export GTK_THEME=Adwaita:dark
 [[ -f ~/.screenlayout/default.sh ]] && sh ~/.screenlayout/default.sh
 # Wallpaper
 [[ -f ~/your/wallpaper.png ]] && xwallpaper --zoom ~/your/wallpaper.png
-# start dwm
+# start dwm, shows a clock, shows current CPU usage and / disk free space
 while xsetroot -name "`date +'%a %b %d %R %Y'` CPU `top -bn 1 | head | awk 'FNR == 3 {print 100-$8}'`% Disk: `df -h | grep -e "102G" | awk '{ print $4 }'`"
 do
     sleep 3
