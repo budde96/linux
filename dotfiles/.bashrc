@@ -5,7 +5,7 @@ alias wttr='curl https://wttr.in/tallinn'
 alias date='date +'%a %b %d %R %Y''
 # Arch stuff
 alias clearer='sudo pacman -Rs $(sudo pacman -Qqtd)'
-alias updato='sudo pacman -Syyu && yay -Syyu'
+alias updato='sudo pacman -Syu && yay -Syu'
 # Update scripts
 # Update Gentoo
 alias updato='doas emaint -a sync && doas emerge --ask --verbose --update --deep --newuse @world && doas emerge @module-rebuild && doas emerge --ask --depclean'
