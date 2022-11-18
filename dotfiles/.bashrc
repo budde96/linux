@@ -8,7 +8,7 @@ alias clearer='sudo pacman -Rs $(sudo pacman -Qqtd)'
 alias updato='sudo pacman -Syu && yay -Syu'
 # Update scripts
 # Update Gentoo
-alias updato='doas emaint -a sync && doas emerge --ask --verbose --update --deep --newuse @world && doas emerge @module-rebuild && doas emerge --ask --depclean'
+alias updato='doas emaint -a sync && doas emerge --ask --verbose --update --deep --with-bdeps=y --newuse @world && doas emerge @module-rebuild && doas emerge --ask --depclean'
 # Update Debian (and PiHole)
 alias updato='sudo apt update && sudo apt -y full-upgrade && sudo apt -y autoremove (&& sudo pihole -up)'
 # Update Alpine
