@@ -12,4 +12,4 @@ while xsetroot -name "`date +'%a %b %d %R %Y'` CPU `top -bn 1 | head | awk 'FNR 
 do
     sleep 3
 done &
-exec dwm
+exec dbus-launch --sh-syntax --exit-with-session dwm
