@@ -5,7 +5,7 @@ while xsetroot -name "`date +'%a %b %d %R %Y'` CPU `top -bn 1 | awk 'FNR == 3 {p
 do
 	sleep 3
 done &
-xwallpaper --output DisplayPort-1 --maximize Pictures/Wallpaper/peakpx.jpg
-xwallpaper --output HDMI-A-0 --maximize Pictures/Wallpaper/M8-Lagoon.png
+xwallpaper --output DisplayPort-1 --maximize Pictures/Wallpaper/peakpx.jpg &
+xwallpaper --output HDMI-A-0 --maximize Pictures/Wallpaper/M8-Lagoon.png &
 gentoo-pipewire-launcher &
 exec dbus-launch --sh-syntax --exit-with-session dwm
