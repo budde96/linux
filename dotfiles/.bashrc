@@ -1,4 +1,3 @@
-
 if [[ $- != *i* ]] ; then
 	return
 fi
