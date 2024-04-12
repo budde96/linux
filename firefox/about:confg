@@ -17,3 +17,13 @@ browser.safebrowsing.blockedURIs.enabled FALSE
 browser.safebrowsing.downloads.enabled FALSE
 browser.safebrowsing.downloads.enabled FALSE
 browser.safebrowsing.phishing.enabled FALSE
+network.captive-portal-service.enabled FALSE
+browser.safebrowsing.malware.enabled FALSE
+services.sync.prefs.sync.browser.safebrowsing.malware.enabled FALSE
+toolkit.telemetry.pioneer-new-studies-available FALSE
+toolkit.telemetry.unified FALSE
+toolkit.telemetry.archive.enabled FALSE
+toolkit.telemetry.enabled FALSE
+datareporting.healthreport.uploadEnabled FALSE
+toolkit.telemetry.prioping.enabled FALSE
+toolkit.telemetry.updatePing.enabled FALSE
