@@ -1,3 +1,8 @@
+toolkit.telemetry.server (blank)
+toolkit.telemetry.cachedClientID (blank)
+toolkit.telemetry.pioneerId (blank)
+toolkit.telemetry.log.level FATAL
+toolkit.telemetry.log.dump FATAL
 privacy.resistFingerprinting TRUE
 privacy.trackingprotection.enabled TRUE
 media.peerconnection.ice.default_address_only FALSE
@@ -5,19 +10,12 @@ network.captive-portal-service.enabled FALSE
 network.cookie.cookieBehavior 5
 privacy.partition.network_state TRUE
 privacy.firstparty.isolate FALSE
-toolkit.telemetry.log.level FATAL
-toolkit.telemetry.log.dump FATAL
-toolkit.telemetry.server (blank)
 toolkit.telemetry.shutdownPingSender.enabled FALSE
 toolkit.telemetry.shutdownPingSender.enabledFirstSession FALSE
 toolkit.telemetry.firstShutdownPing.enabled FALSE
-toolkit.telemetry.cachedClientID (blank)
-toolkit.telemetry.pioneerId (blank)
 browser.safebrowsing.blockedURIs.enabled FALSE
 browser.safebrowsing.downloads.enabled FALSE
-browser.safebrowsing.downloads.enabled FALSE
 browser.safebrowsing.phishing.enabled FALSE
-network.captive-portal-service.enabled FALSE
 browser.safebrowsing.malware.enabled FALSE
 services.sync.prefs.sync.browser.safebrowsing.malware.enabled FALSE
 toolkit.telemetry.pioneer-new-studies-available FALSE
@@ -27,3 +25,5 @@ toolkit.telemetry.enabled FALSE
 datareporting.healthreport.uploadEnabled FALSE
 toolkit.telemetry.prioping.enabled FALSE
 toolkit.telemetry.updatePing.enabled FALSE
+geo.enabled FALSE
+media.peerconnection.enabled FALSE
