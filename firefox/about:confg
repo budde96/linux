@@ -27,3 +27,5 @@ toolkit.telemetry.prioping.enabled FALSE
 toolkit.telemetry.updatePing.enabled FALSE
 geo.enabled FALSE
 media.peerconnection.enabled FALSE
+accessibility.force_disabled 1
+dom.event.clipboardevents.enabled FALSE
