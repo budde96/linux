@@ -1,0 +1,5 @@
+media-libs/vulkan-loader layers
+media-libs/vulkan-layers abi_x86_32
+dev-util/spirv-tools abi_x86_32
+dev-util/glslang abi_x86_32
+dev-util/vulkan-utility-libraries abi_x86_32
