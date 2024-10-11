@@ -1,0 +1,3 @@
+dev-qt/qtwebengine geolocation widgets
+sys-libs/zlib minizip
+dev-qt/qtwebchannel qml
