@@ -1,2 +1,0 @@
-media-video/ffmpeg libaom -jpegxl vmaf
-media-libs/libaom abi_x86_32
