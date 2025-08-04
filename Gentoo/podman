@@ -1,2 +1,0 @@
-app-containers/podman fuse init rootless wrapper btrfs
-net-firewall/iptables nftables
