@@ -1,0 +1,7 @@
+dev-util/rocm-smi nolto.conf
+dev-python/numpy nolto.conf
+media-video/handbrake nolto.conf
+dev-python/scipy nolto.conf
+sys-cluster/mpich nolto.conf
+media-sound/jack2 nolto.conf
+media-libs/vulkan-layers nolto.conf
