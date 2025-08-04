@@ -1,5 +1,0 @@
-media-libs/opus custom-modes
-media-video/ffmpeg extra
-media-video/pipewire extra ffmpeg jack-sdk pipewire-alsa sound-server
-media-sound/pulseaudio -daemon
-media-libs/libcanberra gtk3 -gtk2
