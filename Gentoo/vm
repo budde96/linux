@@ -1,8 +1,0 @@
-app-emulation/qemu aio fuse numa plugins vhost-net vnc -alsa -glusterfs -gtk -lxc -nfs -openvz -pipewire -pulseaudio -rbd -smartcard
--spice -accessibility -virtualbox -wireshark-plugins -xen -zfs
-app-emulation/libvirt fuse libvirtd numa qemu -virt-network
-app-emulation/virt-manager gui
-app-crypt/p11-kit abi_x86_32
-net-libs/gnutls pkcs11 tools
-net-dns/dnsmasq script
-net-misc/spice-gtk usbredir gtk3
