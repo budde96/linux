@@ -1,5 +1,4 @@
 media-libs/opus custom-modes
 media-plugins/alsa-plugins -pulseaudio
 media-sound/pulseaudio -daemon
-media-video/ffmpeg extra
 media-video/pipewire extra sound-server jack-sdk pipewire-alsa -jack-client
