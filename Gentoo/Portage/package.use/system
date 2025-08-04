@@ -1,0 +1,8 @@
+app-admin/doas persist
+dev-lang/php gd
+dev-lang/rust-bin abi_x86_32
+net-misc/networkmanager tools wifi
+sys-apps/shadow bcrypt
+sys-fs/lvm2 lvm
+sys-kernel/gentoo-sources experimental
+sys-libs/glibc multiarch
